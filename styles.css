@@ -1,0 +1,288 @@
+html, 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 1px #73b5ff;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    z-index: 1;
+}
+
+header .header_content {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+header .logo {
+    flex: 1;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding-left: 3.5rem;
+    list-style-type: none;
+}
+
+nav a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .icon {
+    width: 1rem;
+    padding-left: .75rem;
+}
+
+header .mobile {
+    display: none;
+}
+
+header .subscribe {
+    color: red;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+
+@media only screen and (max-width: 760px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .content {
+      padding: .5rem 0;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header .mobile li {
+      padding: 0;
+    }
+  
+    header .mobile .button {
+      padding: .1875rem .5rem;
+      background-color: #73b5ff;
+      line-height: 1.6;
+      color: white;
+    }
+}
+  
+
+
+/* Main Content */
+
+#content {
+    text-align: center;
+    color: #fff;
+    padding-top: 30%;
+    padding-bottom: 0;
+    /* z-index: 1;  */
+    position: relative;
+}
+
+#video-container {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.overlay {
+    font-weight: 600;
+    mix-blend-mode: difference;
+    text-align: center;
+}
+
+.btn {
+  border: 1px solid #1e283c;
+  border-radius: 5px;
+  background-color: #73b5ff;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn:hover {
+  background-color: #736B92;
+}
+
+.btn:active {
+  font-size: 18px;
+  transition: font-size .1s ease-in-out;
+}
+
+
+@media only screen and (max-width: 760px) {
+    .main-content {
+       margin-top: 230px; 
+    }
+    
+    #content {
+      display: none;
+    }
+}
+
+
+/* ABOUT SECTION */
+.about {
+  height: 100%;
+  background-color: #2e2e2e;
+  color: #fff;
+  padding-top: 20%;
+  padding-bottom: 5%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.about img {
+    width: 100%;
+}
+
+.about-images {
+    padding: 15px;
+}
+
+.about-content {
+    display: flex;
+    font-family: cursive;
+    font-size: 1.1rem;
+}
+
+.about-text {
+    line-height: 2.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .about-content {
+        display: block;
+        padding: 0 2rem;
+    }
+}
+
+
+/* Teams Section */
+.team-section {
+    text-align: center;
+    color: #73b5ff;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.team-section h1 {
+    padding: 15px;
+}
+
+#teams-section {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 20px;
+    background-color: #f3f3f3;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    
+  }
+  
+  .team {
+    padding: .5rem;
+    margin: .5rem;
+    background-color: white;
+  }
+
+  #teams-section h1 {
+    margin: 20px 0; /* Adjust the margin for spacing */
+  }
+  
+  .team .image-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  
+  .team h2 {
+    padding-bottom: .5rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-align: center;
+  }
+  
+  .team h3 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #4a4a4a;
+  }
+
+.team img { 
+    width: 100%;
+}
+
+@media only screen and (max-width: 931px) {
+    .team{
+        width: 100%;
+    }
+
+    .team-section h1 {
+        padding-top: 30px;
+    }
+    
+}
+
+
+.contact {
+    background-color: #2e2e2e;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact p {
+    margin-top: 45px;
+    font-style: italic;
+}
+
